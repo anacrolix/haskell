@@ -1,0 +1,32 @@
+name:                hash-file-namer
+version:             0.1.0.0
+synopsis:            Simple project template from stack
+description:         Please see README.md
+homepage:            https://github.com/githubuser/hash-file-namer#readme
+license:             BSD3
+license-file:        LICENSE
+author:              Author name here
+maintainer:          example@example.com
+copyright:           2016 Author name here
+category:            Web
+build-type:          Simple
+cabal-version:       >=1.10
+
+executable hash-file-namer
+  hs-source-dirs:      src
+  main-is:             Main.hs
+  default-language:    Haskell2010
+  build-depends:       base >= 4.7 && < 5
+                     , directory >= 1.2.5.0
+                     , regex-pcre
+                     , filepath
+                     , cryptohash
+                     , bytestring
+                     , base16-bytestring
+
+Test-Suite test-hash-file-namer
+    type: exitcode-stdio-1.0
+    main-is: Test.hs
+    hs-source-dirs: src
+    build-depends: base
+                   , HUnit
